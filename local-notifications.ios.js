@@ -15,7 +15,11 @@ var pendingReceivedNotifications = [],
 (function () {
   // grab 'em here, store em in JS, and give them to the callback when addOnMessageReceivedCallback is wired
   LocalNotifications.notificationReceivedObserver = LocalNotifications._addObserver("notificationReceived", function (result) {
-    var notificationDetails = JSON.parse(result.userInfo.objectForKey('message'));
+    var s = result.userInfo.objectForKey('message');
+    if (s!=null) {
+        s = s.replace(/\r/g, "").replace(/\n/g, "");
+    }
+    var notificationDetails = JSON.parse(s);
     if (receivedNotificationCallback !== null) {
       receivedNotificationCallback(notificationDetails);
     } else {
