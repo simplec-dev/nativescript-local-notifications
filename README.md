@@ -4,9 +4,9 @@
 [![Downloads][downloads-image]][npm-url]
 [![Twitter Follow][twitter-image]][twitter-url]
 
-[npm-image]:http://img.shields.io/npm/v/nativescript-local-notifications.svg
-[npm-url]:https://npmjs.org/package/nativescript-local-notifications
-[downloads-image]:http://img.shields.io/npm/dm/nativescript-local-notifications.svg
+[npm-image]:http://img.shields.io/npm/v/nativescript-ssi-local-notifications.svg
+[npm-url]:https://npmjs.org/package/nativescript-ssi-local-notifications
+[downloads-image]:http://img.shields.io/npm/dm/nativescript-ssi-local-notifications.svg
 [twitter-image]:https://img.shields.io/twitter/follow/eddyverbruggen.svg?style=social&label=Follow%20me
 [twitter-url]:https://twitter.com/eddyverbruggen
 
@@ -16,7 +16,7 @@ Just like remote push notifications, but a few orders of magnitude easier to set
 ## Installation
 From the command prompt go to your app's root folder and execute:
 ```bash
-tns plugin add nativescript-local-notifications
+tns plugin add nativescript-ssi-local-notifications
 ```
 
 #### TypeScript support
@@ -29,14 +29,14 @@ tns install typescript
 Now you can import the plugin as an object into your `.ts` file as follows:
 
 ```typescript
-import * as LocalNotifications from "nativescript-local-notifications";
+import * as LocalNotifications from "nativescript-ssi-local-notifications";
 
 // then use it as:
 LocalNotifications.hasPermission()
 ```
 
 ## Demo app (XML)
-If you want a quickstart, [clone our demo app](https://github.com/EddyVerbruggen/nativescript-local-notifications-demo).
+If you want a quickstart, [clone our demo app](https://github.com/EddyVerbruggen/nativescript-ssi-local-notifications-demo).
 
 
 ## Demo app (Angular)
