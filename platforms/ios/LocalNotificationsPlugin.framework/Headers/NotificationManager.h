@@ -1,5 +1,5 @@
 #import <Foundation/Foundation.h>
-#import "Notification.h"
+#import <LocalNotificationsPlugin/Notification.h>
 
 @interface NotificationManager : NSObject
 @end
